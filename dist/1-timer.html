@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <script type="module" crossorigin src="/goit-js-hw-10/1-timer.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-fyLdAcWF.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/vendor-1Mt4gqrI.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/styles-Dv1iVNqW.css">
+  </head>
+  <body class="page page-timer">
+    <!-- Шапка сторінки з навігацією -->
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link active" href="./1-timer.html">Timer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./2-snackbar.html">Snackbar</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Основний вміст сторінки -->
+    <main class="page-main">
+      <div class="container">
+        <h1 class="main-title">Timer</h1>
+        <!-- Посилання назад на головну -->
+<a class="back-link" href="./index.html">Go back</a>
+
+
+        <!-- Поле вибору дати і кнопка запуску -->
+        <div class="timer-controls">
+          <input
+            type="text"
+            id="datetime-picker"
+            aria-label="Timer date and time"
+            placeholder="Select date and time" />
+          <button type="button" data-start>Start</button>
+        </div>
+
+        <!-- Таймер зворотного відліку -->
+        <div class="timer" aria-live="polite">
+          <div class="field">
+            <span class="value" data-days>00</span>
+            <span class="label">Days</span>
+          </div>
+          <div class="field">
+            <span class="value" data-hours>00</span>
+            <span class="label">Hours</span>
+          </div>
+          <div class="field">
+            <span class="value" data-minutes>00</span>
+            <span class="label">Minutes</span>
+          </div>
+          <div class="field">
+            <span class="value" data-seconds>00</span>
+            <span class="label">Seconds</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Підвал сторінки -->
+    <footer class="page-footer">
+      <!-- Футер сторінки -->
+<footer class="footer">
+  <div class="container">
+    <p class="footer-desc">Homework 10</p>
+  </div>
+</footer>
+
+    </footer>
+
+  </body>
+</html>
