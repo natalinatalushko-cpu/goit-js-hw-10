@@ -1,0 +1,40 @@
+# ✅ Prettier Ignore Rules для проєкту
+# Автор: Vutov Mykola
+# Дата: 2025-10-09
+
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build output
+dist/
+build/
+.vite/
+
+# Logs
+logs/
+*.log
+
+# Assets
+assets/
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.gif
+*.webp
+
+# Database files
+*.json
+
+# Git
+.git/
+
+# IDE
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
+

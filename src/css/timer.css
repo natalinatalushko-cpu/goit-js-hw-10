@@ -1,0 +1,93 @@
+.timer-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  margin: 16px 0 24px;
+}
+
+#datetime-picker {
+  box-sizing: border-box;
+  width: 272px;
+  height: 40px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  padding: 8px 16px;
+  transition: border 250ms ease-in-out;
+}
+
+#datetime-picker:hover {
+  border: 1px solid #000;
+}
+
+#datetime-picker:disabled {
+  color: #808080;
+  pointer-events: none;
+}
+
+[data-start] {
+  padding: 8px 16px;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  background-color: #3b82f6;
+  cursor: pointer;
+}
+
+[data-start]:hover {
+  background-color: #2563eb;
+}
+
+[data-start]:disabled {
+  color: #989898;
+  background-color: #cfcfcf;
+  cursor: not-allowed;
+}
+
+.iziToast .iziToast-close {
+  background: url('../img/toast-close.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 16px;
+}
+
+.iziToast .ico-warning {
+  background: url('../img/toast-error.svg');
+}
+
+.timer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.field {
+  min-width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value {
+  display: block;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.label {
+  font-size: 12px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
